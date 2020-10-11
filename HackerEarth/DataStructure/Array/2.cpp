@@ -34,18 +34,33 @@
 
 using namespace std;
 
-int main()
-{
-    long long int n;
-    int number = 1;
-    cin >> n;
-    int ans;
-    long long int sum = 0;
-    long long int arr[n-1];
-    for (int i = 0; i < n-1; i++)
-    {
-        cin>>arr[i];
-    }
-    sum = accumulate(arr, arr+(n-1), sum);
-    cout<<(n*n)-sum;
+// int main()
+// {
+//     long long int n;
+//     int number = 1;
+//     cin >> n;
+//     int ans;
+//     long long int sum = 0;
+//     long long int arr[n-1];
+//     for (int i = 0; i < n-1; i++)
+//     {
+//         cin>>arr[i];
+//     }
+//     sum = accumulate(arr, arr+(n-1), sum);
+//     cout<<(n*n)-sum;
+// }
+
+
+// Corrected answer
+ 
+int main(){
+	int n,i,t;
+	int sum=0,r;
+	scanf("%d",&n); 
+	//r=n*n;  
+	for(i=1;i<n;i++) {
+		scanf("%d",&t);	
+		sum-=(t-n);
+	}
+	printf("%d",sum+n);
 }
