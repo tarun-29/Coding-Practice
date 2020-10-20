@@ -17,7 +17,7 @@ void bfs(vector<int>g[], int n, int index, vector<bool>&vis){
             }
         }
     }
-}
+}./
 
 int main(){
     int n, m, k;
