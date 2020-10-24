@@ -1,3 +1,4 @@
+
 #include<iostream>
 #include<vector>
 #include<algorithm>
@@ -28,8 +29,11 @@ int main(){
            temp[0] = c1;
            temp[1] = c2;
            temp[2] = c3;
+           cout<<"Berfore";
+           cout<<temp[0]<<" "<<temp[1]<<" "<<temp[2]<<" "<<endl;
            sort(temp.begin(),temp.end());
-           
+           cout<<"After";
+            cout<<temp[0]<<" "<<temp[1]<<" "<<temp[2]<<" "<<endl;
            int mi = temp[0]+temp[1];
            if(mi>k){
                break;
@@ -46,5 +50,6 @@ int main(){
        }
        l++;
    }
+   cout<<"ans";
    cout<<ans;
 }
